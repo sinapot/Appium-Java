@@ -18,7 +18,7 @@ public class Add_Contact {
     public void  setUp() throws MalformedURLException {
         XCUITestOptions caps = new XCUITestOptions();
         caps.setCapability("appium:automationName", "XCUITest");
-        caps.setCapability("appium:platformVersion", "15.5");
+        caps.setCapability("appium:platformVersion", "14.4");
         caps.setCapability("platformName", "iOS");
         caps.setCapability("appium:deviceName", "iPhone 12 Pro");
         caps.setCapability("bundleId","com.apple.MobileAddressBook");
