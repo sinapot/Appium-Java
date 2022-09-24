@@ -9,12 +9,12 @@ import org.testng.annotations.BeforeMethod;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class BaseTest {
-    public AppiumDriver driver;
+public class BaseTestApiDemos {
+    public static AppiumDriver driver;
 
 
-    @BeforeMethod
-    public void  setUp() throws MalformedURLException {
+    //@BeforeMethod
+    public static void AndroidSetUp() throws MalformedURLException {
         //DesiredCapabilities caps = new DesiredCapabilities();
         UiAutomator2Options caps = new UiAutomator2Options();
 
@@ -22,7 +22,7 @@ public class BaseTest {
         caps.setCapability("appium:platformVersion", "9.0");
         caps.setCapability("platformName", "Android");
         caps.setCapability("appium:deviceName", "Pixel_4");
-        caps.setCapability("app",System.getProperty("user.dir")+"/apps/WDIO-Android-NativeDemoApp.apk");
+        caps.setCapability("app",System.getProperty("user.dir")+"/apps/ApiDemos.apk");
 
         URL remoteUrl = new URL("http://localhost:4723/");
 

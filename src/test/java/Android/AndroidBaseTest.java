@@ -1,4 +1,4 @@
-package Android.Base;
+package Android;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
@@ -9,12 +9,11 @@ import org.testng.annotations.BeforeMethod;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class BaseTestApiDemos {
-    public AppiumDriver driver;
+public class BaseTest {
 
+    public static AppiumDriver driver;
 
-    @BeforeMethod
-    public void  setUp() throws MalformedURLException {
+    public void Android_setUp() throws MalformedURLException {
         //DesiredCapabilities caps = new DesiredCapabilities();
         UiAutomator2Options caps = new UiAutomator2Options();
 
@@ -22,14 +21,15 @@ public class BaseTestApiDemos {
         caps.setCapability("appium:platformVersion", "9.0");
         caps.setCapability("platformName", "Android");
         caps.setCapability("appium:deviceName", "Pixel_4");
-        caps.setCapability("app",System.getProperty("user.dir")+"/apps/ApiDemos.apk");
+        //caps.setCapability("app",System.getProperty("user.dir")+"/apps/Android-NativeDemoApp-0.4.0.apk");
+        caps.setCapability("autoGrantPermissions",true);
+        caps.setCapability("appActivity",".MainActivity");
+        caps.setCapability("appPackage","com.wdiodemoapp");
 
         URL remoteUrl = new URL("http://localhost:4723/");
 
         driver = new AndroidDriver(remoteUrl, caps);
-
     }
-
 
     @AfterMethod
     public void tearDown(){
