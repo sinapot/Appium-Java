@@ -1,11 +1,11 @@
-package Android;
+package Android.ApiDemos;
 
 import com.google.common.collect.ImmutableMap;
 import io.appium.java_client.AppiumBy;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.Test;
-import Android.Base.BaseTestApiDemos;
+import Android.ApiDemos.BaseTestApiDemos;
 
 import java.net.MalformedURLException;
 
@@ -15,7 +15,6 @@ public class ScrollGesture extends BaseTestApiDemos {
     //Scrolling using Android UI Automator 2
     @Test
     public void scrollGestureDown() throws MalformedURLException {
-    AndroidSetUp();
     driver.findElement(AppiumBy.accessibilityId("Views")).click();
     //Get Screen Dimension
     Dimension size = driver.manage().window().getSize();

@@ -1,21 +1,22 @@
 package Android.Screens;
 
-
-import Android.Base.BasePage;
+import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.pagefactory.AndroidFindBy;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-public class HomeScreen extends BasePage {
+public class HomeScreen {
 
-    public HomeScreen(AppiumDriver appiumDriver) {
-        super(appiumDriver);
+    public HomeScreen(AppiumDriver driver){
+        this.driver=driver;
+    }
+    protected AppiumDriver driver;
+
+    private final By loginbtn = AppiumBy.accessibilityId("Login");
+
+    public HomeScreen clickLogin(){
+        driver.findElement(loginbtn).click();
+        return new HomeScreen(driver);
     }
 
-    @AndroidFindBy(accessibility = "Login")
-    WebElement loginbtn;
-
-    public void clickLoginButton(){
-        click(loginbtn);
-    }
 }

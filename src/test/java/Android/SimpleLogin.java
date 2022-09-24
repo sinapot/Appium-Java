@@ -5,7 +5,7 @@ import org.testng.annotations.*;
 
 import java.net.MalformedURLException;
 
-public class login extends BaseTest {
+public class SimpleLogin extends AndroidBaseTest {
 
     HomeScreen homeScreen;
 

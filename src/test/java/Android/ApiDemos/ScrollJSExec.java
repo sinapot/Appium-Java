@@ -1,6 +1,6 @@
-package Android;
+package Android.ApiDemos;
 
-import Android.Base.BaseTestApiDemos;
+import Android.ApiDemos.BaseTestApiDemos;
 import io.appium.java_client.AppiumBy;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;

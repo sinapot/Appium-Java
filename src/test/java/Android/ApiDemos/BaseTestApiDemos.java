@@ -1,4 +1,4 @@
-package Android.Base;
+package Android.ApiDemos;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
@@ -13,7 +13,7 @@ public class BaseTestApiDemos {
     public static AppiumDriver driver;
 
 
-    //@BeforeMethod
+    @BeforeMethod
     public static void AndroidSetUp() throws MalformedURLException {
         //DesiredCapabilities caps = new DesiredCapabilities();
         UiAutomator2Options caps = new UiAutomator2Options();
