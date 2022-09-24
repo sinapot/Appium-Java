@@ -1,4 +1,4 @@
-package iOS;
+package iOS.oldtests;
 
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;

@@ -1,0 +1,12 @@
+iOS/AddList.class
+iOS/oldtests/Add_Contact.class
+Android/ApiDemos/ScrollJSExec.class
+Android/ApiDemos/BaseTestApiDemos.class
+Android/Screens/LoginScreen.class
+Android/SimpleLogin.class
+Android/Screens/HomeScreen.class
+Android/ApiDemos/ScrollGesture.class
+iOS/oldtests/AddList.class
+Android/ApiDemos/ScrollUIAut.class
+iOS/Base/iosbasetest.class
+Android/Base/AndroidBaseTest.class
