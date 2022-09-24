@@ -3,14 +3,13 @@ package Android.Screens;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 
 public class HomeScreen {
+    protected AppiumDriver driver;
 
     public HomeScreen(AppiumDriver driver){
         this.driver=driver;
     }
-    protected AppiumDriver driver;
 
     private final By loginbtn = AppiumBy.accessibilityId("Login");
 
