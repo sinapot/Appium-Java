@@ -1,30 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-25T13:27:48 NZDT" name="Suite" finished-at="2022-09-25T13:27:58 NZDT" duration-ms="9821">
+  <suite started-at="2022-09-26T10:12:31 NZDT" name="Suite" finished-at="2022-09-26T10:13:00 NZDT" duration-ms="28459">
     <groups>
     </groups>
-    <test started-at="2022-09-25T13:27:48 NZDT" name="Wdio" finished-at="2022-09-25T13:27:58 NZDT" duration-ms="9821">
+    <test started-at="2022-09-26T10:12:31 NZDT" name="Wdio" finished-at="2022-09-26T10:13:00 NZDT" duration-ms="28459">
       <class name="Forms">
-        <test-method is-config="true" signature="android_setUp()[pri:0, instance:Forms@13c10b87]" started-at="2022-09-25T13:27:48 NZDT" name="android_setUp" finished-at="2022-09-25T13:27:52 NZDT" duration-ms="3744" status="PASS">
+        <test-method is-config="true" signature="ios_setUp()[pri:0, instance:Forms@7995092a]" started-at="2022-09-26T10:12:31 NZDT" name="ios_setUp" finished-at="2022-09-26T10:12:37 NZDT" duration-ms="6327" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- android_setUp -->
-        <test-method signature="clicklogin()[pri:0, instance:Forms@13c10b87]" started-at="2022-09-25T13:27:52 NZDT" name="clicklogin" finished-at="2022-09-25T13:27:54 NZDT" duration-ms="2105" status="PASS">
+        </test-method> <!-- ios_setUp -->
+        <test-method signature="clickSwitch()[pri:0, instance:Forms@7995092a]" started-at="2022-09-26T10:12:37 NZDT" name="clickSwitch" finished-at="2022-09-26T10:12:39 NZDT" duration-ms="1488" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clicklogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Forms@13c10b87]" started-at="2022-09-25T13:27:58 NZDT" name="tearDown" finished-at="2022-09-25T13:27:58 NZDT" duration-ms="130" status="PASS">
+        </test-method> <!-- clickSwitch -->
+        <test-method signature="filloutForm()[pri:0, instance:Forms@7995092a]" started-at="2022-09-26T10:12:39 NZDT" name="filloutForm" finished-at="2022-09-26T10:12:40 NZDT" duration-ms="1246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filloutForm -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Forms@7995092a]" started-at="2022-09-26T10:12:40 NZDT" name="tearDown" finished-at="2022-09-26T10:12:45 NZDT" duration-ms="5037" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Forms -->
       <class name="Login">
-        <test-method signature="clicklogin()[pri:0, instance:Login@23f7d05d]" started-at="2022-09-25T13:27:54 NZDT" name="clicklogin" finished-at="2022-09-25T13:27:58 NZDT" duration-ms="3825" status="PASS">
+        <test-method is-config="true" signature="ios_setUp()[pri:0, instance:Login@60704c]" started-at="2022-09-26T10:12:45 NZDT" name="ios_setUp" finished-at="2022-09-26T10:12:50 NZDT" duration-ms="5265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ios_setUp -->
+        <test-method signature="clicklogin()[pri:0, instance:Login@60704c]" started-at="2022-09-26T10:12:50 NZDT" name="clicklogin" finished-at="2022-09-26T10:12:53 NZDT" duration-ms="3075" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clicklogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Login@60704c]" started-at="2022-09-26T10:12:53 NZDT" name="tearDown" finished-at="2022-09-26T10:13:00 NZDT" duration-ms="6010" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- Login -->
     </test> <!-- Wdio -->
   </suite> <!-- Suite -->

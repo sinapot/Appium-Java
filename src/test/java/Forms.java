@@ -6,11 +6,8 @@ import org.testng.annotations.Test;
 import java.net.MalformedURLException;
 
 public class Forms extends Basetest {
-
     HomeScreen homeScreen;
     FormScreen formScreen;
-
-
     @Test
     public void filloutForm() throws MalformedURLException {
 
@@ -37,6 +34,6 @@ public class Forms extends Basetest {
 
         //check that switch is switched on
         String status = formScreen.isSwitchActive();
-        Assert.assertEquals(status,"ON");
+        Assert.assertEquals(status,"1");
     }
 }
