@@ -15,9 +15,6 @@ public class Basetest {
 
     public static AppiumDriver driver;
     AppiumDriverLocalService service;
-
-
-
     public void android_setUp() throws MalformedURLException {
         //run appium service
         String portNumber = "6666";
@@ -37,17 +34,17 @@ public class Basetest {
         driver = new AndroidDriver(remoteUrl, caps);
     }
     @BeforeClass
-    public void ios_setUp() throws MalformedURLException {
-        //run appium service
-        String portNumber = "6666";
+    @Parameters({"portNumber","deviceName","platformVersion"})
+    public void ios_setUp(String portNumber,String deviceName, String platformVersion) throws MalformedURLException {
         startAppium(portNumber);
 
         XCUITestOptions caps = new XCUITestOptions();
         caps.setCapability("appium:automationName", "XCUITest");
-        caps.setCapability("appium:platformVersion", "14.4");
         caps.setCapability("platformName", "iOS");
-        caps.setCapability("appium:deviceName", "iPhone 12 Pro");
+        caps.setCapability("appium:platformVersion", platformVersion);
+        caps.setCapability("appium:deviceName", deviceName);
         caps.setCapability("app",System.getProperty("user.dir")+"/apps/iOS-Simulator-NativeDemoApp-0.4.0.app.zip");
+        //caps.setCapability("appium:noReset",true);
 
         URL remoteUrl = new URL("http://127.0.0.1:"+ portNumber);
         driver = new IOSDriver(remoteUrl, caps);

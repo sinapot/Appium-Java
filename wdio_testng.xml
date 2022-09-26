@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Suite" parallel="tests">
-    <test name="Wdio">
+    <test name="First iOS Device">
+        <parameter name="portNumber" value="6666"></parameter>
+        <parameter name="platformVersion" value="14.4"></parameter>
+        <parameter name="deviceName" value="iPhone 12 Pro"></parameter>
         <classes>
             <class name="Forms"/>
             <class name="Login"/>
