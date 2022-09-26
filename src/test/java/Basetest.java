@@ -10,6 +10,7 @@ import org.testng.annotations.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
+import java.util.Objects;
 
 public class Basetest {
 
@@ -17,8 +18,7 @@ public class Basetest {
     AppiumDriverLocalService service;
     public void android_setUp() throws MalformedURLException {
         //run appium service
-        String portNumber = "6666";
-        startAppium(portNumber);
+        startAppium();
 
         UiAutomator2Options caps = new UiAutomator2Options();
         caps.setCapability("appium:automationName", "UiAutomator2");
@@ -26,28 +26,39 @@ public class Basetest {
         caps.setCapability("platformName", "Android");
         caps.setCapability("appium:deviceName", "Pixel_4");
         caps.setCapability("app",System.getProperty("user.dir")+"/apps/Android-NativeDemoApp-0.4.0.apk");
-        caps.setCapability("autoGrantPermissions",true);
         caps.setCapability("appActivity",".MainActivity");
         caps.setCapability("appPackage","com.wdiodemoapp");
-
-        URL remoteUrl = new URL("http://127.0.0.1:"+ portNumber);
+        URL remoteUrl = new URL("http://127.0.0.1:4723");
         driver = new AndroidDriver(remoteUrl, caps);
     }
     @BeforeClass
-    @Parameters({"portNumber","deviceName","platformVersion"})
-    public void ios_setUp(String portNumber,String deviceName, String platformVersion) throws MalformedURLException {
-        startAppium(portNumber);
+    @Parameters({"deviceName","platformVersion","platformName","automationName"})
+    public void ios_setUp(String deviceName, String platformVersion, String platformName, String automationName) throws MalformedURLException {
+        startAppium();
 
-        XCUITestOptions caps = new XCUITestOptions();
-        caps.setCapability("appium:automationName", "XCUITest");
-        caps.setCapability("platformName", "iOS");
-        caps.setCapability("appium:platformVersion", platformVersion);
-        caps.setCapability("appium:deviceName", deviceName);
-        caps.setCapability("app",System.getProperty("user.dir")+"/apps/iOS-Simulator-NativeDemoApp-0.4.0.app.zip");
-        //caps.setCapability("appium:noReset",true);
-
-        URL remoteUrl = new URL("http://127.0.0.1:"+ portNumber);
-        driver = new IOSDriver(remoteUrl, caps);
+        if (platformName.equals("iOS"))
+        {
+            XCUITestOptions caps = new XCUITestOptions();
+            caps.setCapability("appium:platformVersion", platformVersion);
+            caps.setCapability("appium:deviceName", deviceName);
+            caps.setCapability("appium:automationName", automationName);
+            caps.setCapability("platformName", platformName);
+            caps.setCapability("app", System.getProperty("user.dir") + "/apps/iOS-Simulator-NativeDemoApp-0.4.0.app.zip");
+            URL remoteUrl = new URL("http://127.0.0.1:4723");
+            driver = new IOSDriver(remoteUrl, caps);
+        }
+        else {
+            UiAutomator2Options caps = new UiAutomator2Options();
+            caps.setCapability("appium:automationName", automationName);
+            caps.setCapability("appium:platformVersion", platformVersion);
+            caps.setCapability("platformName", platformName);
+            caps.setCapability("appium:deviceName", deviceName);
+            caps.setCapability("app",System.getProperty("user.dir")+"/apps/Android-NativeDemoApp-0.4.0.apk");
+            caps.setCapability("appActivity",".MainActivity");
+            caps.setCapability("appPackage","com.wdiodemoapp");
+            URL remoteUrl = new URL("http://127.0.0.1:4723");
+            driver = new AndroidDriver(remoteUrl, caps);
+        }
     }
 
     @AfterClass
@@ -55,18 +66,11 @@ public class Basetest {
         driver.quit();
         stopAppium();
     }
-
-    public void startAppium(String portNumber){
-        AppiumServiceBuilder builder = new AppiumServiceBuilder()
-                .withIPAddress("127.0.0.1")
-                .usingPort(Integer.parseInt(portNumber))
-                .withTimeout(Duration.ofSeconds(300));
-
+    public void startAppium(){
+        AppiumServiceBuilder builder = new AppiumServiceBuilder();
         service = AppiumDriverLocalService.buildService(builder);
         service.start();
-        System.out.println("Appium running at port: "+portNumber);
     }
-
     public void stopAppium(){
         service.stop();
     }

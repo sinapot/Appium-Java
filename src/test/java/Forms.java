@@ -34,6 +34,6 @@ public class Forms extends Basetest {
 
         //check that switch is switched on
         String status = formScreen.isSwitchActive();
-        Assert.assertEquals(status,"1");
+        Assert.assertTrue(status.equals("1")||status.equals("ON"));
     }
 }
