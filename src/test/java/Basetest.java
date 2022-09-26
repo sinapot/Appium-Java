@@ -12,6 +12,7 @@ import java.net.URL;
 import java.time.Duration;
 import java.util.Objects;
 
+//this base test will take any number of devices specified in wdio xml file
 public class Basetest {
     ThreadLocal<AppiumDriver> driver = new ThreadLocal<>();
     public void setDriver(AppiumDriver driver){
