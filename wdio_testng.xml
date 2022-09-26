@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <!--<suite name="Suite" parallel="tests">-->
-<suite name="Suite">
+<suite name="Suite" parallel="tests">
     <test name="First iOS Device">
         <parameter name="platformVersion" value="14.4"></parameter>
         <parameter name="deviceName" value="iPhone 12 Pro"></parameter>
         <parameter name="platformName" value="iOS"></parameter>
         <parameter name="automationName" value="XCUITest"></parameter>
+        <parameter name="udid" value="4CE6D5C1-871D-4816-AB32-17F86DE7215B"></parameter>
+        <parameter name="wdaLocalPort" value="10001"></parameter>
         <classes>
             <class name="Forms"/>
             <class name="Login"/>
@@ -18,9 +20,40 @@
         <parameter name="deviceName" value="Pixel_4"></parameter>
         <parameter name="platformName" value="Android"></parameter>
         <parameter name="automationName" value="UiAutomator2"></parameter>
+        <parameter name="udid" value="emulator-5554"></parameter>
+        <parameter name="systemPort" value="10002"></parameter>
         <classes>
             <class name="Forms"/>
             <class name="Login"/>
         </classes>
     </test>
+
+    <test name="Second iOS Device">
+        <parameter name="platformVersion" value="15.4"></parameter>
+        <parameter name="deviceName" value="iPhone 13 Pro"></parameter>
+        <parameter name="platformName" value="iOS"></parameter>
+        <parameter name="automationName" value="XCUITest"></parameter>
+        <parameter name="udid" value="F9CCCADB-C91E-4929-A280-91AD3D347FB5"></parameter>
+        <parameter name="wdaLocalPort" value="10003"></parameter>
+
+        <classes>
+            <class name="Forms"/>
+            <class name="Login"/>
+        </classes>
+    </test>
+
+    <test name="Second Android Device">
+        <parameter name="platformVersion" value="12.0"></parameter>
+        <parameter name="deviceName" value="Pixel_5"></parameter>
+        <parameter name="platformName" value="Android"></parameter>
+        <parameter name="automationName" value="UiAutomator2"></parameter>
+        <parameter name="udid" value="emulator-5554"></parameter>
+        <parameter name="systemPort" value="10004"></parameter>
+
+        <classes>
+            <class name="Forms"/>
+            <class name="Login"/>
+        </classes>
+    </test>
+
 </suite>

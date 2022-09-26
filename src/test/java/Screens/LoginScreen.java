@@ -21,19 +21,19 @@ public class LoginScreen {
         private final By password = AppiumBy.accessibilityId("input-password");
 
         public LoginScreen typeEmail(String username){
-            new WebDriverWait(driver, Duration.ofSeconds(3)).until(ExpectedConditions.elementToBeClickable(email));
+            new WebDriverWait(driver, Duration.ofSeconds(9)).until(ExpectedConditions.elementToBeClickable(email));
             driver.findElement(email).sendKeys(username);
             return new LoginScreen(driver);
         }
 
         public LoginScreen typeEmailPassword(String passwordinput){
-            new WebDriverWait(driver, Duration.ofSeconds(3)).until(ExpectedConditions.elementToBeClickable(password));
+            new WebDriverWait(driver, Duration.ofSeconds(9)).until(ExpectedConditions.elementToBeClickable(password));
             driver.findElement(password).sendKeys(passwordinput);
             return new LoginScreen(driver);
     }
 
         public LoginScreen clickLOGIN(){
-            new WebDriverWait(driver, Duration.ofSeconds(3)).until(ExpectedConditions.elementToBeClickable(LOGIN));
+            new WebDriverWait(driver, Duration.ofSeconds(9)).until(ExpectedConditions.elementToBeClickable(LOGIN));
             driver.findElement(LOGIN).click();
             return new LoginScreen(driver);
             }

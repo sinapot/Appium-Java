@@ -6,14 +6,14 @@ import org.testng.annotations.Test;
 import java.net.MalformedURLException;
 
 public class Forms extends Basetest {
-    HomeScreen homeScreen;
-    FormScreen formScreen;
+
     @Test
     public void filloutForm() throws MalformedURLException {
-
+        HomeScreen homeScreen;
+        FormScreen formScreen;
         String textInput = "Lorem Ipsum";
-        homeScreen = new HomeScreen(driver);
-        formScreen = new FormScreen(driver);
+        homeScreen = new HomeScreen(getDriver());
+        formScreen = new FormScreen(getDriver());
 
         homeScreen.clickForms();
         formScreen.typeText(textInput);
@@ -25,9 +25,10 @@ public class Forms extends Basetest {
 
     @Test
     public void clickSwitch() throws MalformedURLException {
-
-        homeScreen = new HomeScreen(driver);
-        formScreen = new FormScreen(driver);
+        HomeScreen homeScreen;
+        FormScreen formScreen;
+        homeScreen = new HomeScreen(getDriver());
+        formScreen = new FormScreen(getDriver());
 
         homeScreen.clickForms();
         formScreen.clickSwitch();

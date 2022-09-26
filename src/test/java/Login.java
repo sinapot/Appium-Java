@@ -6,14 +6,14 @@ import java.net.MalformedURLException;
 
 public class Login extends Basetest {
 
-    HomeScreen homeScreen;
-    LoginScreen loginScreen;
+
 
     @Test
     public void clicklogin() throws MalformedURLException {
-
-        homeScreen = new HomeScreen(driver);
-        loginScreen = new LoginScreen(driver);
+        HomeScreen homeScreen;
+        LoginScreen loginScreen;
+        homeScreen = new HomeScreen(getDriver());
+        loginScreen = new LoginScreen(getDriver());
 
 
         homeScreen.clickLogin();
