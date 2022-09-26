@@ -12,6 +12,7 @@
             <class name="Login"/>
         </classes>
     </test>
+
     <test name="First Android Device">
         <parameter name="platformVersion" value="9.0"></parameter>
         <parameter name="deviceName" value="Pixel_4"></parameter>
@@ -22,14 +23,4 @@
             <class name="Login"/>
         </classes>
     </test>
-<!--    <test name="Second iOS Device">-->
-<!--        <parameter name="platformVersion" value="15.4"></parameter>-->
-<!--        <parameter name="deviceName" value="iPhone 13 Pro"></parameter>-->
-<!--        <parameter name="platformName" value="iOS"></parameter>-->
-<!--        <parameter name="automationName" value="XCUITest"></parameter>-->
-<!--        <classes>-->
-<!--            <class name="Forms"/>-->
-<!--            <class name="Login"/>-->
-<!--        </classes>-->
-<!--    </test>-->
 </suite>
