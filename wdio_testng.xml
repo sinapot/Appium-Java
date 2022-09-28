@@ -10,6 +10,7 @@
         <parameter name="udid" value="4CE6D5C1-871D-4816-AB32-17F86DE7215B"></parameter>
         <parameter name="wdaLocalPort" value="10001"></parameter>
         <classes>
+            <class name="DragAndDrop"></class>
             <class name="Forms"/>
             <class name="Login"/>
         </classes>
@@ -23,6 +24,7 @@
         <parameter name="udid" value="emulator-5554"></parameter>
         <parameter name="systemPort" value="10002"></parameter>
         <classes>
+            <class name="DragAndDrop"></class>
             <class name="Forms"/>
             <class name="Login"/>
         </classes>
@@ -37,6 +39,7 @@
         <parameter name="wdaLocalPort" value="10003"></parameter>
 
         <classes>
+            <class name="DragAndDrop"></class>
             <class name="Forms"/>
             <class name="Login"/>
         </classes>
@@ -51,6 +54,7 @@
         <parameter name="systemPort" value="10004"></parameter>
 
         <classes>
+            <class name="DragAndDrop"></class>
             <class name="Forms"/>
             <class name="Login"/>
         </classes>

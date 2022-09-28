@@ -22,14 +22,14 @@ public class Basetest {
         return this.driver.get();
     }
     @BeforeClass
-    @Parameters({"deviceName","platformVersion","platformName","automationName",
+    @Parameters({"deviceName", "platformVersion", "platformName", "automationName",
                  "udid",      "systemPort",     "wdaLocalPort"})
 
-    public void ios_setUp(String deviceName,     String platformVersion, String platformName,
-                          String automationName, String udid,
-                          @Optional("androidOnly") String systemPort,
-                          @Optional("iosOnly") String wdaLocalPort)
-                          throws MalformedURLException {
+    public void setUp(String deviceName,     String platformVersion, String platformName,
+                      String automationName, String udid,
+                      @Optional("androidOnly") String systemPort,
+                      @Optional("iosOnly") String wdaLocalPort)
+                      throws MalformedURLException {
 
 
         if (platformName.equals("iOS"))

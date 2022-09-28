@@ -10,7 +10,6 @@ import java.time.Duration;
 
 public class FormScreen {
     protected AppiumDriver driver;
-
     //constructor
     public FormScreen(AppiumDriver driver){
         this.driver=driver;

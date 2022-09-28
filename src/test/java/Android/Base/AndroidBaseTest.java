@@ -15,6 +15,7 @@ public class AndroidBaseTest {
     public void Android_setUp() throws MalformedURLException {
         UiAutomator2Options caps = new UiAutomator2Options();
 
+        caps.setCapability("appium:idleTimeout","600");
         caps.setCapability("appium:automationName", "UiAutomator2");
         caps.setCapability("appium:platformVersion", "9.0");
         caps.setCapability("platformName", "Android");
