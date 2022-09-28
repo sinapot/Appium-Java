@@ -1,169 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+<testng-results ignored="0" total="16" passed="16" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-26T20:31:53 NZDT" name="Suite" finished-at="2022-09-26T20:34:19 NZDT" duration-ms="145426">
+  <suite started-at="2022-09-28T16:19:47 NZDT" name="Suite" finished-at="2022-09-28T16:20:21 NZDT" duration-ms="34225">
     <groups>
     </groups>
-    <test started-at="2022-09-26T20:31:53 NZDT" name="First iOS Device" finished-at="2022-09-26T20:32:24 NZDT" duration-ms="30433">
+    <test started-at="2022-09-28T16:19:47 NZDT" name="First Android Device" finished-at="2022-09-28T16:20:18 NZDT" duration-ms="31048">
       <class name="Forms">
-        <test-method is-config="true" signature="ios_setUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Forms@23f7d05d]" started-at="2022-09-26T20:31:53 NZDT" name="ios_setUp" finished-at="2022-09-26T20:32:00 NZDT" duration-ms="7008" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[iPhone 12 Pro]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[14.4]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[iOS]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[XCUITest]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ios_setUp -->
-        <test-method signature="clickSwitch()[pri:0, instance:Forms@23f7d05d]" started-at="2022-09-26T20:32:00 NZDT" name="clickSwitch" finished-at="2022-09-26T20:32:02 NZDT" duration-ms="1527" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickSwitch -->
-        <test-method signature="filloutForm()[pri:0, instance:Forms@23f7d05d]" started-at="2022-09-26T20:32:02 NZDT" name="filloutForm" finished-at="2022-09-26T20:32:03 NZDT" duration-ms="1352" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- filloutForm -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Forms@23f7d05d]" started-at="2022-09-26T20:32:03 NZDT" name="tearDown" finished-at="2022-09-26T20:32:09 NZDT" duration-ms="5559" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Forms -->
-      <class name="Login">
-        <test-method is-config="true" signature="ios_setUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Login@23529fee]" started-at="2022-09-26T20:32:09 NZDT" name="ios_setUp" finished-at="2022-09-26T20:32:15 NZDT" duration-ms="6137" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[iPhone 12 Pro]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[14.4]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[iOS]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[XCUITest]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ios_setUp -->
-        <test-method signature="clicklogin()[pri:0, instance:Login@23529fee]" started-at="2022-09-26T20:32:15 NZDT" name="clicklogin" finished-at="2022-09-26T20:32:19 NZDT" duration-ms="3769" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clicklogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Login@23529fee]" started-at="2022-09-26T20:32:19 NZDT" name="tearDown" finished-at="2022-09-26T20:32:24 NZDT" duration-ms="5067" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Login -->
-    </test> <!-- First iOS Device -->
-    <test started-at="2022-09-26T20:32:24 NZDT" name="Second iOS Device" finished-at="2022-09-26T20:33:20 NZDT" duration-ms="56236">
-      <class name="Forms">
-        <test-method is-config="true" signature="ios_setUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Forms@6b26e945]" started-at="2022-09-26T20:32:24 NZDT" name="ios_setUp" finished-at="2022-09-26T20:32:56 NZDT" duration-ms="32543" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[iPhone 13 Pro]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[15.4]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[iOS]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[XCUITest]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ios_setUp -->
-        <test-method signature="clickSwitch()[pri:0, instance:Forms@6b26e945]" started-at="2022-09-26T20:32:56 NZDT" name="clickSwitch" finished-at="2022-09-26T20:32:58 NZDT" duration-ms="1685" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickSwitch -->
-        <test-method signature="filloutForm()[pri:0, instance:Forms@6b26e945]" started-at="2022-09-26T20:32:58 NZDT" name="filloutForm" finished-at="2022-09-26T20:32:59 NZDT" duration-ms="1581" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- filloutForm -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Forms@6b26e945]" started-at="2022-09-26T20:32:59 NZDT" name="tearDown" finished-at="2022-09-26T20:33:05 NZDT" duration-ms="5284" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Forms -->
-      <class name="Login">
-        <test-method is-config="true" signature="ios_setUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Login@63a65a25]" started-at="2022-09-26T20:33:05 NZDT" name="ios_setUp" finished-at="2022-09-26T20:33:11 NZDT" duration-ms="6431" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[iPhone 13 Pro]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[15.4]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[iOS]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[XCUITest]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ios_setUp -->
-        <test-method signature="clicklogin()[pri:0, instance:Login@63a65a25]" started-at="2022-09-26T20:33:11 NZDT" name="clicklogin" finished-at="2022-09-26T20:33:14 NZDT" duration-ms="3171" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clicklogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Login@63a65a25]" started-at="2022-09-26T20:33:14 NZDT" name="tearDown" finished-at="2022-09-26T20:33:20 NZDT" duration-ms="5538" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Login -->
-    </test> <!-- Second iOS Device -->
-    <test started-at="2022-09-26T20:33:20 NZDT" name="First Android Device" finished-at="2022-09-26T20:33:49 NZDT" duration-ms="29144">
-      <class name="Forms">
-        <test-method is-config="true" signature="ios_setUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Forms@3c9d0b9d]" started-at="2022-09-26T20:33:20 NZDT" name="ios_setUp" finished-at="2022-09-26T20:33:27 NZDT" duration-ms="6902" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Forms@6dbb137d]" started-at="2022-09-28T16:20:02 NZDT" name="setUp" finished-at="2022-09-28T16:20:06 NZDT" duration-ms="4656" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -185,25 +29,40 @@
                 <![CDATA[UiAutomator2]]>
               </value>
             </param>
+            <param index="4">
+              <value>
+                <![CDATA[emulator-5554]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[10002]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[iosOnly]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ios_setUp -->
-        <test-method signature="clickSwitch()[pri:0, instance:Forms@3c9d0b9d]" started-at="2022-09-26T20:33:27 NZDT" name="clickSwitch" finished-at="2022-09-26T20:33:29 NZDT" duration-ms="2025" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="clickSwitch()[pri:0, instance:Forms@6dbb137d]" started-at="2022-09-28T16:20:06 NZDT" name="clickSwitch" finished-at="2022-09-28T16:20:08 NZDT" duration-ms="2106" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickSwitch -->
-        <test-method signature="filloutForm()[pri:0, instance:Forms@3c9d0b9d]" started-at="2022-09-26T20:33:29 NZDT" name="filloutForm" finished-at="2022-09-26T20:33:30 NZDT" duration-ms="1278" status="PASS">
+        <test-method signature="filloutForm()[pri:0, instance:Forms@6dbb137d]" started-at="2022-09-28T16:20:08 NZDT" name="filloutForm" finished-at="2022-09-28T16:20:10 NZDT" duration-ms="1256" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- filloutForm -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Forms@3c9d0b9d]" started-at="2022-09-26T20:33:30 NZDT" name="tearDown" finished-at="2022-09-26T20:33:34 NZDT" duration-ms="4157" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Forms@6dbb137d]" started-at="2022-09-28T16:20:10 NZDT" name="tearDown" finished-at="2022-09-28T16:20:10 NZDT" duration-ms="121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Forms -->
-      <class name="Login">
-        <test-method is-config="true" signature="ios_setUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Login@43301423]" started-at="2022-09-26T20:33:34 NZDT" name="ios_setUp" finished-at="2022-09-26T20:33:41 NZDT" duration-ms="6747" status="PASS">
+      <class name="DragAndDrop">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:DragAndDrop@318ba8c8]" started-at="2022-09-28T16:19:47 NZDT" name="setUp" finished-at="2022-09-28T16:19:52 NZDT" duration-ms="5178" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -225,23 +84,89 @@
                 <![CDATA[UiAutomator2]]>
               </value>
             </param>
+            <param index="4">
+              <value>
+                <![CDATA[emulator-5554]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[10002]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[iosOnly]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ios_setUp -->
-        <test-method signature="clicklogin()[pri:0, instance:Login@43301423]" started-at="2022-09-26T20:33:41 NZDT" name="clicklogin" finished-at="2022-09-26T20:33:45 NZDT" duration-ms="3914" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="dragAndDrop()[pri:0, instance:DragAndDrop@318ba8c8]" started-at="2022-09-28T16:19:52 NZDT" name="dragAndDrop" finished-at="2022-09-28T16:20:01 NZDT" duration-ms="9303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dragAndDrop -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DragAndDrop@318ba8c8]" started-at="2022-09-28T16:20:01 NZDT" name="tearDown" finished-at="2022-09-28T16:20:02 NZDT" duration-ms="170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- DragAndDrop -->
+      <class name="Login">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Login@3c9d0b9d]" started-at="2022-09-28T16:20:10 NZDT" name="setUp" finished-at="2022-09-28T16:20:14 NZDT" duration-ms="4704" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pixel_4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Android]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[UiAutomator2]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[emulator-5554]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[10002]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[iosOnly]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="clicklogin()[pri:0, instance:Login@3c9d0b9d]" started-at="2022-09-28T16:20:14 NZDT" name="clicklogin" finished-at="2022-09-28T16:20:18 NZDT" duration-ms="3409" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clicklogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Login@43301423]" started-at="2022-09-26T20:33:45 NZDT" name="tearDown" finished-at="2022-09-26T20:33:49 NZDT" duration-ms="4117" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Login@3c9d0b9d]" started-at="2022-09-28T16:20:18 NZDT" name="tearDown" finished-at="2022-09-28T16:20:18 NZDT" duration-ms="124" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Login -->
     </test> <!-- First Android Device -->
-    <test started-at="2022-09-26T20:33:49 NZDT" name="Second Android Device" finished-at="2022-09-26T20:34:19 NZDT" duration-ms="29583">
+    <test started-at="2022-09-28T16:19:47 NZDT" name="Second Android Device" finished-at="2022-09-28T16:20:18 NZDT" duration-ms="31111">
       <class name="Forms">
-        <test-method is-config="true" signature="ios_setUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Forms@d4342c2]" started-at="2022-09-26T20:33:49 NZDT" name="ios_setUp" finished-at="2022-09-26T20:33:56 NZDT" duration-ms="7260" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Forms@769e7ee8]" started-at="2022-09-28T16:20:02 NZDT" name="setUp" finished-at="2022-09-28T16:20:06 NZDT" duration-ms="4595" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -263,25 +188,40 @@
                 <![CDATA[UiAutomator2]]>
               </value>
             </param>
+            <param index="4">
+              <value>
+                <![CDATA[emulator-5554]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[10004]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[iosOnly]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ios_setUp -->
-        <test-method signature="clickSwitch()[pri:0, instance:Forms@d4342c2]" started-at="2022-09-26T20:33:56 NZDT" name="clickSwitch" finished-at="2022-09-26T20:33:58 NZDT" duration-ms="2142" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="clickSwitch()[pri:0, instance:Forms@769e7ee8]" started-at="2022-09-28T16:20:06 NZDT" name="clickSwitch" finished-at="2022-09-28T16:20:08 NZDT" duration-ms="2044" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickSwitch -->
-        <test-method signature="filloutForm()[pri:0, instance:Forms@d4342c2]" started-at="2022-09-26T20:33:58 NZDT" name="filloutForm" finished-at="2022-09-26T20:33:59 NZDT" duration-ms="771" status="PASS">
+        <test-method signature="filloutForm()[pri:0, instance:Forms@769e7ee8]" started-at="2022-09-28T16:20:08 NZDT" name="filloutForm" finished-at="2022-09-28T16:20:10 NZDT" duration-ms="1269" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- filloutForm -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Forms@d4342c2]" started-at="2022-09-26T20:33:59 NZDT" name="tearDown" finished-at="2022-09-26T20:34:04 NZDT" duration-ms="4569" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Forms@769e7ee8]" started-at="2022-09-28T16:20:10 NZDT" name="tearDown" finished-at="2022-09-28T16:20:10 NZDT" duration-ms="162" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Forms -->
-      <class name="Login">
-        <test-method is-config="true" signature="ios_setUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Login@2bbf180e]" started-at="2022-09-26T20:34:04 NZDT" name="ios_setUp" finished-at="2022-09-26T20:34:11 NZDT" duration-ms="6788" status="PASS">
+      <class name="DragAndDrop">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:DragAndDrop@12b0404f]" started-at="2022-09-28T16:19:47 NZDT" name="setUp" finished-at="2022-09-28T16:19:52 NZDT" duration-ms="5541" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -303,19 +243,403 @@
                 <![CDATA[UiAutomator2]]>
               </value>
             </param>
+            <param index="4">
+              <value>
+                <![CDATA[emulator-5554]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[10004]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[iosOnly]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ios_setUp -->
-        <test-method signature="clicklogin()[pri:0, instance:Login@2bbf180e]" started-at="2022-09-26T20:34:11 NZDT" name="clicklogin" finished-at="2022-09-26T20:34:14 NZDT" duration-ms="3527" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="dragAndDrop()[pri:0, instance:DragAndDrop@12b0404f]" started-at="2022-09-28T16:19:52 NZDT" name="dragAndDrop" finished-at="2022-09-28T16:20:01 NZDT" duration-ms="8973" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dragAndDrop -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DragAndDrop@12b0404f]" started-at="2022-09-28T16:20:01 NZDT" name="tearDown" finished-at="2022-09-28T16:20:02 NZDT" duration-ms="199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- DragAndDrop -->
+      <class name="Login">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Login@5276e6b0]" started-at="2022-09-28T16:20:10 NZDT" name="setUp" finished-at="2022-09-28T16:20:14 NZDT" duration-ms="4677" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pixel_5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Android]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[UiAutomator2]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[emulator-5554]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[10004]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[iosOnly]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="clicklogin()[pri:0, instance:Login@5276e6b0]" started-at="2022-09-28T16:20:14 NZDT" name="clicklogin" finished-at="2022-09-28T16:20:18 NZDT" duration-ms="3523" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clicklogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Login@2bbf180e]" started-at="2022-09-26T20:34:14 NZDT" name="tearDown" finished-at="2022-09-26T20:34:19 NZDT" duration-ms="4524" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Login@5276e6b0]" started-at="2022-09-28T16:20:18 NZDT" name="tearDown" finished-at="2022-09-28T16:20:18 NZDT" duration-ms="116" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Login -->
     </test> <!-- Second Android Device -->
+    <test started-at="2022-09-28T16:19:47 NZDT" name="First iOS Device" finished-at="2022-09-28T16:20:18 NZDT" duration-ms="31539">
+      <class name="Forms">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Forms@2805c96b]" started-at="2022-09-28T16:20:01 NZDT" name="setUp" finished-at="2022-09-28T16:20:06 NZDT" duration-ms="4298" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[iPhone 12 Pro]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[14.4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[iOS]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[XCUITest]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[4CE6D5C1-871D-4816-AB32-17F86DE7215B]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[androidOnly]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[10001]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="clickSwitch()[pri:0, instance:Forms@2805c96b]" started-at="2022-09-28T16:20:06 NZDT" name="clickSwitch" finished-at="2022-09-28T16:20:07 NZDT" duration-ms="1512" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickSwitch -->
+        <test-method signature="filloutForm()[pri:0, instance:Forms@2805c96b]" started-at="2022-09-28T16:20:07 NZDT" name="filloutForm" finished-at="2022-09-28T16:20:09 NZDT" duration-ms="1374" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filloutForm -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Forms@2805c96b]" started-at="2022-09-28T16:20:09 NZDT" name="tearDown" finished-at="2022-09-28T16:20:10 NZDT" duration-ms="1071" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Forms -->
+      <class name="DragAndDrop">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:DragAndDrop@7d3a22a9]" started-at="2022-09-28T16:19:47 NZDT" name="setUp" finished-at="2022-09-28T16:19:52 NZDT" duration-ms="5231" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[iPhone 12 Pro]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[14.4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[iOS]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[XCUITest]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[4CE6D5C1-871D-4816-AB32-17F86DE7215B]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[androidOnly]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[10001]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="dragAndDrop()[pri:0, instance:DragAndDrop@7d3a22a9]" started-at="2022-09-28T16:19:52 NZDT" name="dragAndDrop" finished-at="2022-09-28T16:20:00 NZDT" duration-ms="8207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dragAndDrop -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DragAndDrop@7d3a22a9]" started-at="2022-09-28T16:20:00 NZDT" name="tearDown" finished-at="2022-09-28T16:20:01 NZDT" duration-ms="1060" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- DragAndDrop -->
+      <class name="Login">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Login@184cf7cf]" started-at="2022-09-28T16:20:10 NZDT" name="setUp" finished-at="2022-09-28T16:20:14 NZDT" duration-ms="4418" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[iPhone 12 Pro]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[14.4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[iOS]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[XCUITest]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[4CE6D5C1-871D-4816-AB32-17F86DE7215B]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[androidOnly]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[10001]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="clicklogin()[pri:0, instance:Login@184cf7cf]" started-at="2022-09-28T16:20:14 NZDT" name="clicklogin" finished-at="2022-09-28T16:20:17 NZDT" duration-ms="3287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clicklogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Login@184cf7cf]" started-at="2022-09-28T16:20:17 NZDT" name="tearDown" finished-at="2022-09-28T16:20:18 NZDT" duration-ms="1066" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Login -->
+    </test> <!-- First iOS Device -->
+    <test started-at="2022-09-28T16:19:47 NZDT" name="Second iOS Device" finished-at="2022-09-28T16:20:21 NZDT" duration-ms="34225">
+      <class name="Forms">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Forms@d4342c2]" started-at="2022-09-28T16:20:04 NZDT" name="setUp" finished-at="2022-09-28T16:20:08 NZDT" duration-ms="4478" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[iPhone 13 Pro]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[15.4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[iOS]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[XCUITest]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[F9CCCADB-C91E-4929-A280-91AD3D347FB5]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[androidOnly]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[10003]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="clickSwitch()[pri:0, instance:Forms@d4342c2]" started-at="2022-09-28T16:20:08 NZDT" name="clickSwitch" finished-at="2022-09-28T16:20:10 NZDT" duration-ms="1492" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickSwitch -->
+        <test-method signature="filloutForm()[pri:0, instance:Forms@d4342c2]" started-at="2022-09-28T16:20:10 NZDT" name="filloutForm" finished-at="2022-09-28T16:20:11 NZDT" duration-ms="1424" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filloutForm -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Forms@d4342c2]" started-at="2022-09-28T16:20:11 NZDT" name="tearDown" finished-at="2022-09-28T16:20:13 NZDT" duration-ms="1098" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Forms -->
+      <class name="DragAndDrop">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:DragAndDrop@4e91d63f]" started-at="2022-09-28T16:19:47 NZDT" name="setUp" finished-at="2022-09-28T16:19:55 NZDT" duration-ms="8040" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[iPhone 13 Pro]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[15.4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[iOS]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[XCUITest]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[F9CCCADB-C91E-4929-A280-91AD3D347FB5]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[androidOnly]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[10003]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="dragAndDrop()[pri:0, instance:DragAndDrop@4e91d63f]" started-at="2022-09-28T16:19:55 NZDT" name="dragAndDrop" finished-at="2022-09-28T16:20:03 NZDT" duration-ms="7960" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dragAndDrop -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DragAndDrop@4e91d63f]" started-at="2022-09-28T16:20:03 NZDT" name="tearDown" finished-at="2022-09-28T16:20:04 NZDT" duration-ms="1057" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- DragAndDrop -->
+      <class name="Login">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Login@2bbf180e]" started-at="2022-09-28T16:20:13 NZDT" name="setUp" finished-at="2022-09-28T16:20:17 NZDT" duration-ms="4537" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[iPhone 13 Pro]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[15.4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[iOS]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[XCUITest]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[F9CCCADB-C91E-4929-A280-91AD3D347FB5]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[androidOnly]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[10003]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="clicklogin()[pri:0, instance:Login@2bbf180e]" started-at="2022-09-28T16:20:17 NZDT" name="clicklogin" finished-at="2022-09-28T16:20:20 NZDT" duration-ms="3063" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clicklogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Login@2bbf180e]" started-at="2022-09-28T16:20:20 NZDT" name="tearDown" finished-at="2022-09-28T16:20:21 NZDT" duration-ms="1062" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Login -->
+    </test> <!-- Second iOS Device -->
   </suite> <!-- Suite -->
 </testng-results>

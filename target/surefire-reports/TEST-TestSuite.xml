@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="12" failures="0" name="TestSuite" time="26.716" errors="0" skipped="0">
+<testsuite tests="16" failures="0" name="TestSuite" time="38.847" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="17.0.4.1+1-LTS-2"/>
@@ -60,16 +60,20 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase classname="Forms" name="clickSwitch" time="1.528"/>
-  <testcase classname="Forms" name="filloutForm" time="1.348"/>
-  <testcase classname="Login" name="clicklogin" time="3.769"/>
-  <testcase classname="Forms" name="clickSwitch" time="1.686"/>
-  <testcase classname="Forms" name="filloutForm" time="1.573"/>
-  <testcase classname="Login" name="clicklogin" time="3.17"/>
-  <testcase classname="Forms" name="clickSwitch" time="2.026"/>
-  <testcase classname="Forms" name="filloutForm" time="1.27"/>
-  <testcase classname="Login" name="clicklogin" time="3.914"/>
-  <testcase classname="Forms" name="clickSwitch" time="2.142"/>
-  <testcase classname="Forms" name="filloutForm" time="0.764"/>
-  <testcase classname="Login" name="clicklogin" time="3.526"/>
+  <testcase classname="DragAndDrop" name="dragAndDrop" time="5.401"/>
+  <testcase classname="DragAndDrop" name="dragAndDrop" time="6.45"/>
+  <testcase classname="DragAndDrop" name="dragAndDrop" time="6.473"/>
+  <testcase classname="DragAndDrop" name="dragAndDrop" time="7.96"/>
+  <testcase classname="Forms" name="clickSwitch" time="0.995"/>
+  <testcase classname="Forms" name="clickSwitch" time="1.041"/>
+  <testcase classname="Forms" name="clickSwitch" time="0.067"/>
+  <testcase classname="Forms" name="filloutForm" time="0.151"/>
+  <testcase classname="Forms" name="filloutForm" time="1.087"/>
+  <testcase classname="Forms" name="filloutForm" time="1.143"/>
+  <testcase classname="Forms" name="clickSwitch" time="1.493"/>
+  <testcase classname="Forms" name="filloutForm" time="1.424"/>
+  <testcase classname="Login" name="clicklogin" time="0.375"/>
+  <testcase classname="Login" name="clicklogin" time="0.825"/>
+  <testcase classname="Login" name="clicklogin" time="0.898"/>
+  <testcase classname="Login" name="clicklogin" time="3.064"/>
 </testsuite>

@@ -2,9 +2,12 @@ Login.class
 iOS/AddList.class
 Android/ApiDemos/ScrollJSExec.class
 Android/Screens/LoginScreen.class
+Android/Screens/SimpleDrag.class
 Android/Screens/HomeScreen.class
+DragAndDrop.class
 Screens/LoginScreen.class
 iOS/oldtests/AddList.class
+Screens/DragScreen.class
 Basetest.class
 iOS/oldtests/Add_Contact.class
 Android/ApiDemos/BaseTestApiDemos.class
