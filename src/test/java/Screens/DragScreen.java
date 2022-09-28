@@ -44,32 +44,55 @@ public class DragScreen {
                 .until(driver -> driver.findElement(sourceElement));
         WebElement target1 = new WebDriverWait(driver, Duration.ofSeconds(3))
                 .until(driver -> driver.findElement(destElement));
-        //get element coordinates
-        Point source = source1.getLocation();
-        Point target = target1.getLocation();
+        //created separate methods to get center coordinates of source and target elements
+        int sourceX = calcSourceCenterX(source1);
+        int sourceY = calcSourceCenterY(source1);
+        int targetX = calTargetCenterX(target1);
+        int targetY = calcSourceCenterY(target1);
+
         //instantiate PointerInput Class
         PointerInput finger = new PointerInput(PointerInput.Kind.TOUCH, "finger");
         //instantiate Sequence Class to execute
         Sequence dragNDrop = new Sequence(finger, 1);
         //move finger to source
         dragNDrop.addAction(finger.createPointerMove(   Duration.ofMillis(0),
-                PointerInput.Origin.viewport(),
-                source.x,
-                source.y));
+                PointerInput.Origin.viewport(),sourceX,sourceY));
         //press pointer down at current location
         dragNDrop.addAction(finger.createPointerDown(   PointerInput.MouseButton.LEFT.asArg()));
 
         //move while pressed down to target
-        dragNDrop.addAction(finger.createPointerMove(   Duration.ofMillis(2000),
-                PointerInput.Origin.viewport(),
-                target.x,
-                target.y));
+        dragNDrop.addAction(finger.createPointerMove(   Duration.ofMillis(200),
+                PointerInput.Origin.viewport(),targetX,targetY));
         //release the finger
         dragNDrop.addAction(finger.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
         //execute the dragNDrop Sequence
         driver.perform(Arrays.asList(dragNDrop));
-        Thread.sleep(3000);
 
+    }
+    //center calculations of source and targets
+    private int calcSourceCenterX(WebElement source1) {
+        int leftX = source1.getLocation().getX();
+        int width = source1.getSize().getWidth();
+        int middleX = leftX + (width / 2);
+        return middleX;
+    }
+    private int calcSourceCenterY(WebElement source1)  {
+        int upperY = source1.getLocation().getY();
+        int height = source1.getSize().getHeight();
+        int middleY = upperY + (height / 2);
+        return middleY;
+    }
+    private int calTargetCenterX(WebElement target1) {
+        int targetLeftX = target1.getLocation().getX();
+        int targetWidth = target1.getSize().getWidth();
+        int targetMiddleX = targetLeftX + (targetWidth / 2);
+        return targetMiddleX;
+    }
+    private int calTargetCenter(WebElement target1){
+        int targetUpperY = target1.getLocation().getY();
+        int targetHeight = target1.getSize().getHeight();
+        int targetMiddleY = targetUpperY + (targetHeight / 2);
+        return targetMiddleY;
     }
 
 }
