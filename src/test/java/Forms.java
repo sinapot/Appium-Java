@@ -9,11 +9,9 @@ public class Forms extends Basetest {
 
     @Test
     public void filloutForm() throws MalformedURLException {
-        HomeScreen homeScreen;
-        FormScreen formScreen;
         String textInput = "Lorem Ipsum";
-        homeScreen = new HomeScreen(getDriver());
-        formScreen = new FormScreen(getDriver());
+        HomeScreen homeScreen = new HomeScreen(getDriver());
+        FormScreen formScreen = new FormScreen(getDriver());
 
         homeScreen.clickForms();
         formScreen.typeText(textInput);
@@ -25,10 +23,9 @@ public class Forms extends Basetest {
 
     @Test
     public void clickSwitch() throws MalformedURLException {
-        HomeScreen homeScreen;
-        FormScreen formScreen;
-        homeScreen = new HomeScreen(getDriver());
-        formScreen = new FormScreen(getDriver());
+
+        HomeScreen homeScreen = new HomeScreen(getDriver());
+        FormScreen formScreen = new FormScreen(getDriver());
 
         homeScreen.clickForms();
         formScreen.clickSwitch();

@@ -33,12 +33,16 @@ public class HomeScreen {
             driver.findElement(forms).click();
         }
         public void clickSwipe(){
-            driver.findElement(swipe).click();
+            waitToBeClickable(swipe);
         }
         public void clickDrag(){
-            WebElement drag1 = driver.findElement(drag);
-            new WebDriverWait(driver, Duration.ofSeconds(9)).until(ExpectedConditions.elementToBeClickable(drag1));
-            drag1.click();
+            waitToBeClickable(drag);
+        }
+
+        private void waitToBeClickable(By element){
+            WebElement waitElement = driver.findElement(element);
+            new WebDriverWait(driver, Duration.ofSeconds(9)).until(ExpectedConditions.elementToBeClickable(waitElement));
+            waitElement.click();
         }
 
 }

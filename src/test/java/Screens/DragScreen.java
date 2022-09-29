@@ -37,7 +37,7 @@ public class DragScreen {
     public final By drop_r2 = AppiumBy.accessibilityId("drop-r2");
     public final By drop_r3 = AppiumBy.accessibilityId("drop-r3");
 
-    public void dragElement(By sourceElement, By destElement) throws InterruptedException {
+    public synchronized void dragElement(By sourceElement, By destElement) throws InterruptedException {
 
         //explicit wait
         WebElement source1 = new WebDriverWait(driver, Duration.ofSeconds(3))
@@ -73,26 +73,22 @@ public class DragScreen {
     private int calcSourceCenterX(WebElement source1) {
         int leftX = source1.getLocation().getX();
         int width = source1.getSize().getWidth();
-        int middleX = leftX + (width / 2);
-        return middleX;
+        return leftX + (width / 2);
     }
     private int calcSourceCenterY(WebElement source1)  {
         int upperY = source1.getLocation().getY();
         int height = source1.getSize().getHeight();
-        int middleY = upperY + (height / 2);
-        return middleY;
+        return upperY + (height / 2);
     }
     private int calTargetCenterX(WebElement target1) {
         int targetLeftX = target1.getLocation().getX();
         int targetWidth = target1.getSize().getWidth();
-        int targetMiddleX = targetLeftX + (targetWidth / 2);
-        return targetMiddleX;
+        return targetLeftX + (targetWidth / 2);
     }
     private int calTargetCenter(WebElement target1){
         int targetUpperY = target1.getLocation().getY();
         int targetHeight = target1.getSize().getHeight();
-        int targetMiddleY = targetUpperY + (targetHeight / 2);
-        return targetMiddleY;
+        return targetUpperY + (targetHeight / 2);
     }
 
 }

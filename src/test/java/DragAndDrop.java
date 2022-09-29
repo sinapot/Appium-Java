@@ -7,12 +7,10 @@ import java.net.MalformedURLException;
 public class DragAndDrop extends Basetest {
 
     @Test
-    public void dragAndDrop() throws MalformedURLException, InterruptedException {
-        HomeScreen homeScreen;
-        DragScreen dragScreen;
+    public synchronized void dragAndDrop() throws MalformedURLException, InterruptedException {
 
-        homeScreen = new HomeScreen(getDriver());
-        dragScreen = new DragScreen(getDriver());
+        HomeScreen homeScreen = new HomeScreen(getDriver());
+        DragScreen dragScreen = new DragScreen(getDriver());
 
         homeScreen.clickDrag();
         dragScreen.dragElement(dragScreen.drag_l1,dragScreen.drop_l1);
